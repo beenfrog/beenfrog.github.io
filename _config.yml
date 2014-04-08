@@ -1,0 +1,44 @@
+# General Jekyll Config
+pygments: true
+url: research.beenfrog.com
+lsi: false
+exclude: [LICENSE, CNAME, README.md, .gitignore]
+
+# Theme customization - please change from the defaults!
+theme:
+  # Color for top bar, links, etc
+  highlight_color: '#e6801a'
+
+  # Profile links on the left sidebar, leave blank to ignore
+  social:
+    github: beenfrog
+    bitbucket: beenfrog
+    #hacker_news: 
+    #stackexchange: 
+    #stackoverflow: 
+    #twitter: 
+    #facebook: 
+    #tumblr: 
+    #linkedin: 
+    gplus: 
+    email: 
+
+  # "Hi, I'm _______"
+  name: beenfrog
+  email: 
+  tagline: "What does God need with a starship?"
+
+  # Google Analytics key, leave blank to ignore
+  google_analytics_key: 
+
+  # Toggle "Postings are my own" disclaimer in footer
+  show_disclaimer: false
+
+  # Comments by Disqus
+  comments :
+  provider : disqus
+  disqus :
+    short_name : beenfrog
+
+  #Timezone
+  timezone: Asia/Shanghai
