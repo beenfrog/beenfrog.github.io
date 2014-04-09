@@ -24,12 +24,13 @@ $$ x_{1,2} = \frac{-b \pm \sqrt{b^2-4ac}}{2a}$$
 #Code piece
 Here is a piece of code in c:
 
-    #include<stdio.h>
-    int main()
-    {
-        printf("hello, world\n");
-    }
-
+```
+#include<stdio.h>
+int main()
+{
+    printf("hello, world\n");
+}
+```
 
 #Language
 Maybe I can try write English blog here.
