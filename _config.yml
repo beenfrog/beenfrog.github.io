@@ -3,7 +3,7 @@ pygments: true
 url: research.beenfrog.com
 lsi: false
 exclude: [LICENSE, CNAME, README.md, .gitignore]
-
+markdown: kramdown
 # Theme customization - please change from the defaults!
 theme:
   # Color for top bar, links, etc
