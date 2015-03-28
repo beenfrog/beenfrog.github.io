@@ -10,7 +10,7 @@ The code piece for read leveldb or lmdb with python.
 
 #leveldb
 
-```
+```python
 import caffe
 import leveldb
 import numpy as np
@@ -28,7 +28,7 @@ for key, value in db.RangerIter():
 
 #lmdb
 
-```
+```python
 import caffe
 import lmdb
 import numpy as np
