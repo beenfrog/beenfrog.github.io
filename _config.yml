@@ -3,7 +3,11 @@ pygments: true
 url: research.beenfrog.com
 lsi: false
 exclude: [LICENSE, CNAME, README.md, .gitignore]
-markdown: kramdown
+
+markdown: redcarpet
+redcarpet:
+    extensions: ["fenced_code_blocks", "autolink", "tables", "strikethrough"]
+
 # Theme customization - please change from the defaults!
 theme:
   # Color for top bar, links, etc
