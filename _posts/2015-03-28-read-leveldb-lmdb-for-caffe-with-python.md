@@ -8,7 +8,7 @@ comments: true
 
 The code piece for read leveldb or lmdb with python.
 
-#leveldb
+##leveldb
 
 ```python
 import caffe
@@ -26,7 +26,7 @@ for key, value in db.RangerIter():
 	data = caffe.io.datum_to_array(datum)
 ```
 
-#lmdb
+##lmdb
 
 ```python
 import caffe
