@@ -8,7 +8,7 @@ comments: true
 
 Sometimes we want to normalize the data in one layer, especially L2 Normalization.  However, there is not such layer in caffe, so I write the simple layer with the inspiration from the most similar layer called SoftmaxLayer. 
 
-## add protobuf
+## 1. add protobuf
 Add the new layer type GRN, which is short for Global Response Normalization
 caffe/src/caffe/proto/caffe.proto
 
@@ -25,7 +25,7 @@ message LayerParameter {
 }
 ```
 
-## add layer factory
+## 2. add layer factory
 caffe/src/caffe/layer_factory.cpp
 
 ```c++
@@ -41,7 +41,7 @@ Layer<Dtype>* GetLayer(const LayerParameter& param) {
 }
 ```
 
-## class declaration
+## 3. class declaration
 caffe/include/caffe/common_layers.hpp
 
 ```c++
@@ -85,7 +85,7 @@ class GRNLayer : public Layer<Dtype> {
 };
 ```
 
-## cpp implementation
+## 4. cpp implementation
 caffe/src/caffe/layers/grn_layer.cpp
 
 ```c++
@@ -195,7 +195,7 @@ INSTANTIATE_CLASS(GRNLayer);
 
 ```
 
-## cuda implementation
+## 5. cuda implementation
 caffe/src/caffe/layers/grn_layer.cu
 
 ```c++
@@ -336,8 +336,8 @@ INSTANTIATE_CLASS(GRNLayer);
 }  // namespace caffe
 ```
 
-## layer test 
-caffe/src/caffe/test/test_grn_layer.cpp
+## 6. layer test 
+caffe/src/caffe/test/test\_grn\_layer.cpp
 
 ```c++
 #include <cmath>
