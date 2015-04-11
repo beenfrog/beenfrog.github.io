@@ -11,7 +11,8 @@ Sometimes we want to normalize the data in one layer, especially L2 Normalizatio
 ## add protobuf
 Add the new layer type GRN, which is short for Global Response Normalization
 caffe/src/caffe/proto/caffe.proto
-```ptorobuf
+
+```
 message LayerParameter {
 //...
   // LayerType next available ID: 39 (last added: GRN)
@@ -26,6 +27,7 @@ message LayerParameter {
 
 ## add layer factory
 caffe/src/caffe/layer_factory.cpp
+
 ```c++
 template <typename Dtype>
 Layer<Dtype>* GetLayer(const LayerParameter& param) {
@@ -41,6 +43,7 @@ Layer<Dtype>* GetLayer(const LayerParameter& param) {
 
 ## class declaration
 caffe/include/caffe/common_layers.hpp
+
 ```c++
 /**
  * @brief Global Response Normalizion with L2 .
@@ -84,6 +87,7 @@ class GRNLayer : public Layer<Dtype> {
 
 ## cpp implementation
 caffe/src/caffe/layers/grn_layer.cpp
+
 ```c++
 #include <algorithm>
 #include <vector>
@@ -191,8 +195,9 @@ INSTANTIATE_CLASS(GRNLayer);
 
 ```
 
-### cuda implementation
+## cuda implementation
 caffe/src/caffe/layers/grn_layer.cu
+
 ```c++
 #include <algorithm>
 #include <vector>
@@ -333,6 +338,7 @@ INSTANTIATE_CLASS(GRNLayer);
 
 ## layer test 
 caffe/src/caffe/test/test_grn_layer.cpp
+
 ```c++
 #include <cmath>
 #include <cstring>
