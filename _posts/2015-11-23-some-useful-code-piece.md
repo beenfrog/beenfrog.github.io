@@ -1,0 +1,13 @@
+---
+layout: post
+title: Some Useful Code Piece
+categories:
+- code
+comments: true
+---
+
+## Naive method to read config file in cpp
+Github: [cpp-config](https://github.com/beenfrog/cpp-config)
+
+## View OpenCV Mat in GDB
+Github: [gdb-opencv-viewer](https://github.com/beenfrog/gdb-opencv-viewer)
