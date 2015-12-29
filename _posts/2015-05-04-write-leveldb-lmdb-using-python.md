@@ -65,7 +65,7 @@ lmdb_file = 'xxxx'
 batch_size = 1234
 
 # create the leveldb file
-lmdb_env = lmdb.open(lmdb_file)
+lmdb_env = lmdb.open(lmdb_file, map_size=int(1e12))
 lmdb_txn = lmdb_env.begin(write=True)
 datum = caffe_pb2.Datum()
 
