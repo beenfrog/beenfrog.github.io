@@ -24,6 +24,9 @@ for key, value in db.RangeIter():
 
 	label = datum.label
 	data = caffe.io.datum_to_array(datum)
+
+	#CxHxW to HxWxC in cv2
+	image = np.transpose(data, (1,2,0))
 ```
 
 ##lmdb
@@ -44,4 +47,7 @@ for key, value in lmdb_cursor:
 
 	label = datum.label
 	data = caffe.io.datum_to_array(datum)
+
+	#CxHxW to HxWxC in cv2
+	image = np.transpose(data, (1,2,0))
 ```
