@@ -8,6 +8,7 @@ comments: true
 This is an example to show how to wirte and read lmdb file for caffe with python. You can use cv2 to read your own image data.
 
 Write
+
 ```python
 import lmdb
 import numpy as np
@@ -52,6 +53,7 @@ if (item_id+1) % batch_size != 0:
 ```
 
 Read
+
 ```python
 import caffe
 import lmdb
