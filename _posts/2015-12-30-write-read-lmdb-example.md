@@ -5,7 +5,7 @@ categories:
 - code
 comments: true
 ---
-This is an example to show how to wirte and read lmdb file for caffe with python. You can use cv2 to read your own image data.
+This is an example to show how to write and read lmdb file for caffe with python. You can use cv2 to read your own image data.
 
 Write
 
