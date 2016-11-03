@@ -6,8 +6,7 @@ exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 highlighter: pygments
 
 assets:  /assets
-baseurl: 
-baseurlfixed: http://research.beenfrog.com
+baseurl:  http://research.beenfrog.com
 
 # pagination
 paginate: 10
