@@ -7,7 +7,7 @@ highlighter: pygments
 
 assets:  /assets
 baseurl: 
-baseurlfixed: http://beenfrog.github.io
+baseurlfixed: http://research.beenfrog.com
 
 # pagination
 paginate: 10
