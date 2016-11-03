@@ -61,8 +61,8 @@ rss: /atom.xml ## RSS address.
 
 #### Image
 imglogo:
-  enable: true             ## display image logo true/false.
-  src: img/logo.png        ## `.svg` and `.png` are recommended,please put image into the theme folder `/jacman/source/img`.
+  enable: false             ## display image logo true/false.
+  src: #img/logo.png        ## `.svg` and `.png` are recommended,please put image into the theme folder `/jacman/source/img`.
 favicon: img/favicon.png   ## size:32px*32px,`.ico` is recommended,please put image into the theme folder `/jacman/source/img`.     
 apple_icon: #img/jacman.jpg ## size:114px*114px,please put image into the theme folder `/jacman/source/img`.
 author_img: #img/author.jpg ## size:220px*220px.display author avatar picture.if don't want to display,please don't set this.
@@ -79,7 +79,7 @@ mathjax: true      #enable mathjax if true
 #### Author information
 author:
   name: beenfrog      ## e.g. wuchong Author name
-  intro_line1:  "I'm a PhD student in Computer Vision at CASIA."    ## your introduction on the bottom of the page
+  intro_line1:  "I'm a PhD student in Computer Vision at CASIA"    ## your introduction on the bottom of the page
   intro_line2:  "This is my research blog"  ## the 2nd line
   weibo:      ## e.g. wuchong1014 or 2176287895 for http://weibo.com/2176287895
   weibo_verifier:  ## e.g. b3593ceb Your weibo-show widget verifier ,if you use weibo-show it is needed.
@@ -88,7 +88,7 @@ author:
   zhihu:      ## e.g. jark  for http://www.zhihu.com/people/jark
   email:      ## e.g. imjark@gmail.com
   twitter:    ## e.g. jarkwu for https://twitter.com/jarkwu
-  github:     https://github.com/beenfrog ## e.g. wuchong for https://github.com/wuchong
+  github:     beenfrog ## e.g. wuchong for https://github.com/wuchong
   facebook:   ## e.g. imjark for https://facebook.com/imjark
   linkedin:   ## e.g. wuchong1014 for https://www.linkedin.com/in/wuchong1014
   google_plus:    ## e.g. "111190881341800841449" for https://plus.google.com/u/0/111190881341800841449, the "" is needed!
