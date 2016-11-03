@@ -6,6 +6,7 @@ tags:
 categories:
 - blog
 comments: true
+mathjax: true
 ---
 
 I found the github and the github.io are very powerful these days, with github I can manage codes with git and download many useful opensource codes, while in github.io I can write some research notes here to share with others.
