@@ -1,6 +1,9 @@
 ---
 layout: post
 title: View layer blobs in Caffe
+tags:
+- python
+- caffe
 categories:
 - code
 comments: true

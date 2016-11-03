@@ -1,6 +1,10 @@
 ---
 layout: post
 title: Write/Read lmdb file for caffe with python
+tags:
+- python
+- caffe
+- lmdb
 categories:
 - code
 comments: true
@@ -20,7 +24,7 @@ from caffe.proto import caffe_pb2
 lmdb_file = 'lmdb_data'
 batch_size = 256
 
-# create the leveldb file
+# create the lmdb file
 lmdb_env = lmdb.open(lmdb_file, map_size=int(1e12))
 lmdb_txn = lmdb_env.begin(write=True)
 datum = caffe_pb2.Datum()

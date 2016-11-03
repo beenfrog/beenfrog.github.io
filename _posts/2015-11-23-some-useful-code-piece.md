@@ -1,6 +1,10 @@
 ---
 layout: post
 title: Some Useful Code Piece
+tags:
+- c++
+- github
+- opencv
 categories:
 - code
 comments: true

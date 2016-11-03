@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Write some research notes here
+tags:
+- blog
 categories:
 - blog
 comments: true

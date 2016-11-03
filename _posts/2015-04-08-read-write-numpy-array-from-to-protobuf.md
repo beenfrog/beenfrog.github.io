@@ -1,6 +1,9 @@
 ---
 layout: post
 title: Read/write numpy array from/to protobuf
+tags:
+- python
+- caffe
 categories:
 - code
 comments: true

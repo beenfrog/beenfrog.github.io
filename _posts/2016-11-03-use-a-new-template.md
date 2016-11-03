@@ -1,6 +1,9 @@
 ---
 layout: post
 title: 启用新的博客模板
+tags:
+- blog
+- chinese
 categories:
 - blog
 comments: true
