@@ -5,8 +5,9 @@ permalink: /:categories/:year/:month/:day/:title.html
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 highlighter: pygments
 
-assets:  http://beenfrog.github.io/assets
-baseurl: http://beenfrog.github.io
+assets:  /assets
+baseurl: 
+baseurlfixed: http://beenfrog.github.io
 
 # pagination
 paginate: 10
