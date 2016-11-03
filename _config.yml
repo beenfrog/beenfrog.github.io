@@ -39,6 +39,8 @@ defaults:
 menu:
   Home: /
   Archives: /archives
+  Tags: /tags
+  Categories: /categories
   About: /about
 ## you can create `tags` and `categories` folders in `../source`.
 ## And create a `index.md` file in each of them.
@@ -51,6 +53,8 @@ menu:
 widgets: 
 - category
 - tag
+- archive
+- tagcloud
 - links
 - rss
 ## provide seven widgets:category,tag,rss,archive,tagcloud,links,weibo,douban
