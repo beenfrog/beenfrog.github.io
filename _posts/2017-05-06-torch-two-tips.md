@@ -25,8 +25,8 @@ local input = cv.resize{frame, {w,h}}:permute(3,1,2):clone():resize(1,3,h,w):cud
 自己的系统Ubuntu 12.04比较老了，只安装了cudnn R2，好多最新的cudnn功能都无法使用。最近使用全卷积网络做分割小实验，发现nn.CrossEntropyCriterion不支持pixel-level的损失计算，cudnn中有SpatialCrossEntropyCriterion，而自己的老cudnn不支持。一时还不想折腾系统升级，故而折腾了一下nn.CrossEntropyCriterion，也能完成自己的目的。其实也简单，多加一个变形的网络，也就是transpose和reshape的组合，代码如下，将rnet拆开有利于训练好后net的部署使用。
 
 ```lua
-local batch_data  = torch.FloatTensor(bs, 3, h, w):cuda()
-local batch_label = torch.FloatTensor(bs * h * w):cuda()
+local batch_data  = torch.FloatTensor(bs, 3, h, w)
+local batch_label = torch.FloatTensor(bs * h * w)
 ...
 net = define_segnet()
 cri = nn.CrossEntropyCriterion()
