@@ -15,7 +15,7 @@ Sometimes we want to normalize the data in one layer, especially L2 Normalizatio
 Add the new layer type GRN, which is short for Global Response Normalization
 caffe/src/caffe/proto/caffe.proto
 
-```
+```lua
 message LayerParameter {
 //...
   // LayerType next available ID: 39 (last added: GRN)

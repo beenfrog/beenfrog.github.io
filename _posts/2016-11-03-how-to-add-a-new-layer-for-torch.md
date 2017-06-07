@@ -139,7 +139,7 @@ TH_API void THNN_CudaNewLayer_accGradParameters(
 ## 编译安装
 代码写完后，就可以编译安装了，因为我们将代码添加在了nn和cunn目录下，直接重新编译nn和cunn即可，命令如下：
 
-``` bash
+```lua
 cd torch/extra/nn/
 luarocks make rocks/nn-scm-1.rockspec
 
