@@ -17,7 +17,7 @@ date: 2017-06-07 16:50:00 +0800
 ## 修改hosts
 将得到的ip地址和想访问的url加入hosts即可。如下两个目前自己测试可以用，访问时使用https即可。
 
-```
+```bash
 216.58.199.238 encrypted.google.com
 172.217.26.4 scholar.google.com
 ```
