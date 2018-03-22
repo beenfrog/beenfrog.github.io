@@ -21,7 +21,7 @@ import cv2
 import caffe
 from caffe.proto import caffe_pb2
 
-#basic setting
+# basic setting
 leveldb_file = 'xxxx'
 batch_size = 1234
 
@@ -65,7 +65,7 @@ import cv2
 import caffe
 from caffe.proto import caffe_pb2
 
-#basic setting
+# basic setting
 lmdb_file = 'xxxx'
 batch_size = 1234
 

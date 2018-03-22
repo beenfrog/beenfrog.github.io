@@ -20,7 +20,7 @@ import cv2
 import caffe
 from caffe.proto import caffe_pb2
 
-#basic setting
+# basic setting
 lmdb_file = 'lmdb_data'
 batch_size = 256
 

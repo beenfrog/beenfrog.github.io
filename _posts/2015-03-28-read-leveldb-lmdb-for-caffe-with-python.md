@@ -13,7 +13,7 @@ comments: true
 
 The code piece for read leveldb or lmdb with python.
 
-##leveldb
+## leveldb
 
 ```python
 import caffe
@@ -34,7 +34,7 @@ for key, value in db.RangeIter():
 	image = np.transpose(data, (1,2,0))
 ```
 
-##lmdb
+## lmdb
 
 ```python
 import caffe
