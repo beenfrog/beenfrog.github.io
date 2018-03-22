@@ -15,21 +15,6 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
 
-## highlighter: pygments
-## highlighter: rouge
-
-##  # Markdown Processors
-##  markdown: redcarpet
-##  redcarpet:
-##    extensions:
-##      - hard_wrap
-##      - no_intra_emphasis
-##      - autolink
-##      - strikethrough
-##      - tables
-##      - lax_spacing
-##      - with_toc_data
-
 
 title : Beenfrog's research blog
 tagline: #A new template
@@ -95,7 +80,7 @@ author:
   zhihu:      ## e.g. jark  for http://www.zhihu.com/people/jark
   email:      ## e.g. imjark@gmail.com
   twitter:    ## e.g. jarkwu for https://twitter.com/jarkwu
-  github:     beenfrog ## e.g. wuchong for https://github.com/wuchong
+  github:     ## e.g. wuchong for https://github.com/wuchong
   facebook:   ## e.g. imjark for https://facebook.com/imjark
   linkedin:   ## e.g. wuchong1014 for https://www.linkedin.com/in/wuchong1014
   google_plus:    ## e.g. "111190881341800841449" for https://plus.google.com/u/0/111190881341800841449, the "" is needed!
