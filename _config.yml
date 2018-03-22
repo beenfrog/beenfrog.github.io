@@ -12,17 +12,17 @@ baseurl:  http://research.beenfrog.com
 # pagination
 paginate: 10
 
-# Markdown Processors
-markdown: redcarpet
-redcarpet:
-  extensions:
-    - hard_wrap
-    - no_intra_emphasis
-    - autolink
-    - strikethrough
-    - tables
-    - lax_spacing
-    - with_toc_data
+## # Markdown Processors
+## arkdown: redcarpet
+## edcarpet:
+##  extensions:
+##    - hard_wrap
+##    - no_intra_emphasis
+##    - autolink
+##    - strikethrough
+##    - tables
+##    - lax_spacing
+##    - with_toc_data
 
 
 title : Beenfrog's research blog
@@ -141,8 +141,8 @@ totop: true           ## if you want to scroll to top in every post set the valu
 
 #### Custom Search
 google_cse: 
-  enable: true
-  cx: 015179354377631374002:8ricqqoahye  ## e.g. 018294693190868310296:abnhpuysycw your Custom Search ID.
+  enable: false
+  cx: ## 015179354377631374002:8ricqqoahye  ## e.g. 018294693190868310296:abnhpuysycw your Custom Search ID.
 ## https://www.google.com/cse/ 
 ## To enable the custom search You must create a "search" folder in '/source' and a "index.md" file
 ## set the 'front-matter' as
