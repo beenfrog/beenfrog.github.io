@@ -4,8 +4,6 @@ title: Read leveldb/lmdb for caffe with python
 tags:
 - python
 - caffe
-- lmdb
-- leveldb
 categories:
 - code
 comments: true

@@ -4,7 +4,6 @@ title: Write/Read lmdb file for caffe with python
 tags:
 - python
 - caffe
-- lmdb
 categories:
 - code
 comments: true

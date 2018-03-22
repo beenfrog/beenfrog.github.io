@@ -6,7 +6,6 @@ tags:
 - torch
 - lua
 - c/c++
-- chinese
 categories:
 - research
 comments: true

@@ -4,8 +4,6 @@ title: Write leveldb/lmdb using python
 tags:
 - python
 - caffe
-- lmdb
-- leveldb
 categories:
 - code
 comments: true
