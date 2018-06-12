@@ -5,7 +5,7 @@ tags:
 - deeplearning
 - torch
 - lua
-- c++
+- cpp
 categories:
 - research
 comments: true
