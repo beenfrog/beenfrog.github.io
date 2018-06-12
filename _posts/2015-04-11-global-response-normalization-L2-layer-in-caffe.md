@@ -2,7 +2,7 @@
 layout: post
 title: Global Response Normalization (L2) layer in caffe
 tags:
-- c++
+- cpp
 - caffe
 categories:
 - code
