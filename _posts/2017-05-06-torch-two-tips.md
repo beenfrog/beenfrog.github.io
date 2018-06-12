@@ -2,7 +2,7 @@
 layout: post
 title: Torch小细节两则
 tags:
-- deep learning
+- deeplearning
 - torch
 categories:
 - code
