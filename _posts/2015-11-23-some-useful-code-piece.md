@@ -2,7 +2,7 @@
 layout: post
 title: Some Useful Code Piece
 tags:
-- c/c++
+- c++
 - github
 - opencv
 categories:
