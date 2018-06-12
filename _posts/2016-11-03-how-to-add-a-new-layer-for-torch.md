@@ -2,10 +2,10 @@
 layout: post
 title: 如何在torch中添加新的层？
 tags:
-- deep learning
+- deeplearning
 - torch
 - lua
-- c/c++
+- c++
 categories:
 - research
 comments: true
