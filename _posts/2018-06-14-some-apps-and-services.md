@@ -72,6 +72,7 @@ date: 2018-06-14 18:21:55 +0800
 ## KindleEar
 + 在`GAE`上搭建自己的Kindle推送，先在`GAE`建立一个`Pyhton`项目，后进入网页控制台里面的`shell`，运行[KindleEar-Uploader](https://github.com/kindlefere/KindleEar-Uploader)的脚本进行安装。
 + 搭好后，通过`app-id.appspot.com`登录管理，默认用户名和密码均是`admin`。
++ 在控制台里面，计算->`App Engine`->设置->自定义网域，可以自定义域名，根据提示先通过TXT记录验证自己的主域名 `******.com`，然后添加`kindle.******.com`二级域名作为该项目的二级域名。在`DNS`提供商处添加值为kindle,指向`ghs.******.com`的二级记录，原理见文中的`Blogger`章节。
 + 有用的链接: [〇](https://github.com/cdhigh/KindleEar), [一](https://sspai.com/post/40509), [二](https://bookfere.com/post/19.html)
 
 ## Firefox Quantum
@@ -88,9 +89,10 @@ date: 2018-06-14 18:21:55 +0800
 + 有用的链接: [〇](https://github.com/geeeeeeeeek/electronic-wechat)
 
 ## Blogger Ghs地址
-+ 目前`blogger`的`blogspot`网站可以通过自定域名方式实现墙内访问，需要将博客域名`cname`到`ghs.google.com`，但是该域名也被墙。
++ 目前`blogger`的`blogspot`网站可以通过自定域名方式实现墙内访问，需要将博客域名`CNAME`到`ghs.google.com`，但是该域名也被墙。
 + 可在[`ipip ping`](https://www.ipip.net/ping.php)中找`ghs.google.com`的国内能访问的`ip`。
-+ 同样测试该`ip`在国内可访问情况，选择好的`ip`作为博客A记录对应的`ip`。
++ 同样测试该`ip`在国内可访问情况，在`DNS`提供商处建立一个ghs的A记录并指向这个好的`ip`。这样自己二级域名`ghs.******.com`相当于`ghs.google.com`，然后将`www`通过`CNAME`指向该`ghs.******.com`即可。
++ 通过建立一个中间`ghs`而不是直接将`www`A记录到`ip`的好处是该`ghs`可多出使用，如文中的`KindleEar`也用了该`ghs`，若以后可用的`ip`有变化，只修改一处即可。
 + 有用的链接: [〇](https://www.jingfengshuo.com/archives/226.html)
 
 ## Sci-Hub
