@@ -8,7 +8,7 @@ assets:  /assets
 baseurl:  http://research.beenfrog.com
 
 # pagination
-paginate: 10
+paginate: 5
 
 markdown: kramdown
 kramdown:
