@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 抓起某网页所有文章并使用kindle阅读
+title: 抓取某网站所有文章并使用kindle阅读
 tags:
 - python
 - network
