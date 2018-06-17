@@ -69,6 +69,25 @@ date: 2018-06-14 18:21:55 +0800
   ```
 + 有用的链接：[〇](https://github.com/iovxw/rssbot)
 
+## Nginx
++ 搭建一个简单的文件共享服务器，首先安装`nginx`，通过`firewall-cmd`开启`http`服务，修改`/etc/nginx/nginx.conf`，将`user nginx`改为`user root`，并注释掉默认的`server`内容，自己添加一个`/etc/nginx/conf.d/fileshare.conf`，内容参照如下：
+  ```
+  server {
+      listen       80 default_server;
+      listen       [::]:80 default_server;
+      server_name  _;
+      root         /root/sharefile;
+  
+      location / {
+          autoindex on;
+          autoindex_exact_size on;
+          autoindex_localtime on;
+      }
+  }
+  ```
++ 命令行输入`nginx`即可启用，`nginx -s reload`为重启，`nginx -s stop`为停止，`nginx -t`显示状态。
++ 有用的链接：[〇](https://www.jianshu.com/p/95602720e7c8)
+
 ## KindleEar
 + 在`GAE`上搭建自己的Kindle推送，先在`GAE`建立一个`Pyhton`项目，后进入网页控制台里面的`shell`，运行[KindleEar-Uploader](https://github.com/kindlefere/KindleEar-Uploader)的脚本进行安装。
 + 搭好后，通过`app-id.appspot.com`登录管理，默认用户名和密码均是`admin`。
