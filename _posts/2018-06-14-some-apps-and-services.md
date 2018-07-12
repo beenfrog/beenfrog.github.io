@@ -127,3 +127,4 @@ date: 2018-06-14 18:21:55 +0800
 + [`torrentz2`](https://torrentz2.eu)搜国外资源的的种子很方便。
 + [同韵查询](http://www.iguci.cn/dictionary/yunzhe.php)，编顺口溜时有用。
 + [谷歌镜像](https://ac.scmor.com/)，无翻墙环境可临时使用。
++ [知网英文版](http://oversea.cnki.net)，学位论文可以下载pdf格式。
