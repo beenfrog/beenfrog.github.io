@@ -7,7 +7,7 @@ categories:
 - code
 comments: true
 mathjax: false
-date: 2018-07-13 16:47:25 +0800
+date: 2018-07-14 16:47:25 +0800
 ---
 
 A simple pytorch(version: 0.5.0a0) example inludes `load data`, `define model`, `train`, `test`, `view log(tensorboard)`, `save model`.
