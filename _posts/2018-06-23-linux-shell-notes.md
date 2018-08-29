@@ -23,3 +23,7 @@ wget -i urllist.txt
 curl -O www.xxx.xxx/file.txt
 curl -O www.xxx.xxx/file[000-100].txt
 ```
+## qpdf
+```bash
+qpdf --decrypt infile.pdf outfile.pdf
+```
