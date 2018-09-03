@@ -48,6 +48,36 @@ date: 2018-06-14 18:21:55 +0800
   2404:6800:4008:c06::be scholar.l.google.com
   2404:6800:4008:803::2001 scholar.googleusercontent.com
   ```
++ 一些命令
+```bash
+yum install vim git
+yum install python-setuptools && easy_install pip
+pip install git+https://github.com/shadowsocks/shadowsocks.git@master
+
+vim /etc/firewalld/zones/public.xml
+    <port protocol="tcp" port="443"/>
+firewall-cmd --reload
+
+mkdir -p /root/Server/shadowsocks
+vim /root/Server/shadowsocks/config.json
+{
+        "server":"::",
+        "server_port":443,
+        "password":"xxxxxxxx",
+        "local_address":"127.0.0.1",
+        "local_port":1080,
+        "timeout":300,
+        "method":"aes-256-cfb",
+        "log-file":"/dev/null",
+        "fast_open":false
+}
+
+vim ~/.bashrc
+    alias ss-restart='/usr/bin/ssserver -c /root/Server/shadowsocks/config.json -d restart'
+    alias ss-start='/usr/bin/ssserver -c /root/Server/shadowsocks/config.json -d start'
+    alias ss-stop='/usr/bin/ssserver -c /root/Server/shadowsocks/config.json -d stop'
+```
+
 + 有用的链接：[〇](https://github.com/shadowsocks/shadowsocks/wiki), [安装一](https://thief.one/2017/02/22/Shadowsocks%E6%8A%98%E8%85%BE%E8%AE%B0/), [安装二](https://github.com/sirzdy/shadowsocks), [BBR三](https://www.isthnew.com/archives/centos7-bbr.html), [本地四](https://pangsuan.com/p/ubuntu-shadowsocks-client.html)
 
 ## Rsshub
