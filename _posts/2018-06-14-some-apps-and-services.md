@@ -153,6 +153,10 @@ date: 2018-06-14 18:21:55 +0800
 + [地址一](http://gen.lib.rus.ec/)
 + [地址二](http://libgen.io/)
 
+## XDM
++ [Linux下载工具XDM](http://xdman.sourceforge.net/)
++ [获取某网盘的直接下载链接](https://greasyfork.org/zh-CN/scripts/39504)
+
 ## Website
 + [`torrentz2`](https://torrentz2.eu)搜国外资源的的种子很方便。
 + [同韵查询](http://www.iguci.cn/dictionary/yunzhe.php)，编顺口溜时有用。
