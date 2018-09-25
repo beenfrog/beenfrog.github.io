@@ -37,8 +37,19 @@ date: 2018-06-14 18:21:55 +0800
 ## Shadowsocks
 + 口碑很不错，教程网上很多，在`Centos 7`里面要通过`firewall-cmd`开启相应端口，这点有的教程未提，当时折腾好好久。
 + 新版的`Android`客户端貌似不支持4.4的老系统，尝试发现`shadowsocks-nightly-3.4.2.ap`k可用，可在`github release`中下载使用。
-+ `ios`的客户端基本在国内都被下架了，最后发现`SsrConnectPro`国区可用。
++ `ios`的客户端基本在国内都被下架了，最后发现`SsrConnectPro`和`ConnectPlus`国区可用。
 + `Ubuntu`无法全局使用，可在浏览器使用`Proxy SwitchyOmega`，命令行的`.bashrc`中设置`export ALL_PROXY=socks5://127.0.0.1:1080`，之后`git clone`速度飞快。
++ 某`vps`默认的DNS设置`/etc/resolv.conf`为`nameserver 108.61.10.10`,某天发现许多网站加载时很慢，最终还是`time out`，一直以为是墙干扰的原因，后来发现在服务器上`ping`一些打不开的域名出现错误，认定是服务器用的DNS有问题，之后改为谷歌的DNS就好了，具体细节如下
+```bash
+vim /etc/sysconfig/network-scripts/ifcfg-eth0
+# add the follow lines
+PEERDNS="yes"
+DNS1="8.8.8.8"
+DNS2="8.8.4.4"
+# restart service
+service network restart
+ss-restart
+```
 + 好多`vps`的的ip被`Google Scholar`判定为异常，可在服务器的`/etc/hosts`中添加如下`ipv6`的地址，信息来自[ipv6-hosts](https://raw.githubusercontent.com/lennylxx/ipv6-hosts/master/hosts)
   ```bash
   2404:6800:4008:c06::be scholar.google.com
@@ -78,7 +89,7 @@ date: 2018-06-14 18:21:55 +0800
       alias ss-stop='/usr/bin/ssserver -c /root/Server/shadowsocks/config.json -d stop'
   ```
 
-+ 有用的链接：[〇](https://github.com/shadowsocks/shadowsocks/wiki), [安装一](https://thief.one/2017/02/22/Shadowsocks%E6%8A%98%E8%85%BE%E8%AE%B0/), [安装二](https://github.com/sirzdy/shadowsocks), [BBR三](https://www.isthnew.com/archives/centos7-bbr.html), [本地四](https://pangsuan.com/p/ubuntu-shadowsocks-client.html)
++ 有用的链接：[〇](https://github.com/shadowsocks/shadowsocks/wiki), [安装一](https://thief.one/2017/02/22/Shadowsocks%E6%8A%98%E8%85%BE%E8%AE%B0/), [安装二](https://github.com/sirzdy/shadowsocks), [BBR三](https://www.isthnew.com/archives/centos7-bbr.html), [本地四](https://pangsuan.com/p/ubuntu-shadowsocks-client.html), [DNS五](https://blog.csdn.net/w670328683/article/details/61923858)
 
 ## Rsshub
 + 用来给没有`rss`输出的网站以`rss`输出功能，支持知乎，微博等。
