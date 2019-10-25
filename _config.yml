@@ -31,7 +31,6 @@ defaults:
 menu:
   Home: /
   Archives: /archives
-  Edit: https://github.com/beenfrog/beenfrog.github.io/tree/master/_posts
   About: /about
 ## you can create `tags` and `categories` folders in `../source`.
 ## And create a `index.md` file in each of them.
@@ -98,6 +97,7 @@ toc:
 #### Links
 links:
   二〇一二以降: http://www.beenfrog.com
+  后台编辑发帖: https://github.com/beenfrog/beenfrog.github.io/tree/master/_posts
 
 #### Comment
 duoshuo_shortname:    ## e.g. wuchong   your duoshuo short name.
