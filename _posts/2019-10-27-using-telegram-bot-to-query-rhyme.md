@@ -45,4 +45,4 @@ else:
 ```
 
 ## 效果图
-![bot demo](/assets/img/bot.jpg =800x)
+![bot demo](/assets/img/bot.jpg)
