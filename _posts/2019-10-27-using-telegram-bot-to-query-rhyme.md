@@ -24,6 +24,7 @@ date: 2019-10-27 01:47:05 +0800
 + 为了更顺，只查询同声调的字，没有考虑平仄。
 + 为了支持能在python2/3中运行，且支持汉字的读取和输出，接触和学习了之前没碰到的东西，面向谷歌编程。
 + 处理python2/3兼容以及汉字相关的片段，摘自[yun.py](https://github.com/beenfrog/TongYunBot/blob/master/yun.py)
+
 ```python
 import sys
 if sys.version_info[0] < 3:
@@ -42,5 +43,6 @@ if sys.version_info[0] < 3:
 else:
 	newlist = sorted(oldlist, key = cmp_to_key(cmp_hanzi))
 ```
+
 ## 效果图
-![bot demo](/assets/img/bot.jpg )
+![bot demo](/assets/img/bot.jpg =800x)
