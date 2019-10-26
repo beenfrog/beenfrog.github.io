@@ -17,10 +17,7 @@ date: 2018-06-14 18:21:55 +0800
 + 使用的一些`bot`如下，从名字也能知道其功能
   + `@BotFather`
   + `@GmailBot`
-  + `@weatherbot`
-  + `@AirPollution_Bot`
-  + `@temp_mail_bot`
-  + `@scihubot`
+  + `@to_kindle_bot`
 + 有用的链接：[〇](https://telegram.org/)
 
 ## Vultr
