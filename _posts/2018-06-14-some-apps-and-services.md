@@ -88,6 +88,23 @@ ss-restart
 
 + 有用的链接：[〇](https://github.com/shadowsocks/shadowsocks/wiki), [安装一](https://thief.one/2017/02/22/Shadowsocks%E6%8A%98%E8%85%BE%E8%AE%B0/), [安装二](https://github.com/sirzdy/shadowsocks), [BBR三](https://www.isthnew.com/archives/centos7-bbr.html), [本地四](https://pangsuan.com/p/ubuntu-shadowsocks-client.html), [DNS五](https://blog.csdn.net/w670328683/article/details/61923858)
 
+## Proxychains
+在命令行中使用代理，(Proxychains)[https://github.com/rofl0r/proxychains-ng], 安装方式如下
+```bash
+  ./configure --prefix=/usr --sysconfdir=/etc
+  make
+  [optional] sudo make install
+  [optional] sudo make install-config (installs proxychains.conf)
+  # edit the config file, add the line
+  vim /etc/proxychains.conf 
+  socks5  127.0.0.1 10808
+  # alias
+  alias pc4='proxychains4'
+  # usage
+  pc4 curl myip.ipip.net
+  pc4 curl cip.cc
+```
+
 ## Rsshub
 + 用来给没有`rss`输出的网站以`rss`输出功能，支持知乎，微博等。
 + 可使用官方提供的服务，也可以在自己`vps`上搭建，主要是安装nodejs的环境以及依赖，同样要使用`firewall-cmd`开启端口。
