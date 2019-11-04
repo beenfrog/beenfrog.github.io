@@ -14,6 +14,21 @@ date: 2019-10-28 18:37:00 +0800
 ---
 记录一下常用软件的安装与配置
 
+## Ubuntu
+系统的常用设置
+
+### 将home下的文件夹名改为英文
++ 终端中输入如下，并选择同意改名
+```bash
+export LANG=en_US
+xdg-user-dirs-gtk-update
+```
++ 之后再在终端输入
+```bash
+export LANG=zh_CN
+```
++ 重启电脑后，会提示时候改回成中文，选择不改即可
+
 ## Firefox
 常用插件如：
 + Adblock Plus
