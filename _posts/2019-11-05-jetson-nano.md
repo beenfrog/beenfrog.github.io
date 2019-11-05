@@ -25,5 +25,6 @@ date: 2019-11-05 09:14:00 +0800
 + 系统里面自带chrome，安装插件就是个难题，只能首先在终端里面`chromium-browser --proxy-server="socks5://127.0.0.1:10808"`开启代理，然后就可以打开[Proxy SwitchyOmega](https://chrome.google.com/webstore/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif)并安装插件了。
 + 安装`proxychains4`，使终端也能用到代理，方法见[proxychains](https://research.beenfrog.com/blog/2018/06/14/some-apps-and-services.html#proxychains).
 + 测试了一下，排除网速的影响，nano看1080P不卡，还是很厉害的。
++ `synergy`共享键鼠，详见[常用软件的安装与配置](https://research.beenfrog.com/code/2019/10/28/some-software-install-and-setting.html#synergy)
 + `Sublime Text` 用不了，真是可惜
 ## 开发软件
