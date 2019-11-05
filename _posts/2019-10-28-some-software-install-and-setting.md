@@ -89,3 +89,18 @@ C:\Users\Administrator\Anaconda3
 C:\Users\Administrator\Anaconda3\Scripts
 C:\Users\Administrator\Anaconda3\Library\bin
 ```
+
+## synergy
+用于多台机器之间共享鼠标、键盘、剪贴板。只要在一台机器上安装了鼠标键盘，就可以在其他机器上使用，对于桌面有多台机器来说非常的方便。例如一台桌面Linux，一台Windows，一台嵌入式的Nano系统，这样只要一套键鼠就可以操作所有机器了，减少了各种切换以及对桌面的空间需求。
+安装过程，首先对于Nano，使用命令安装如下：
+```bash
+sudo apt-get install synergy
+```
+当前安装的版本为1.8.8，之后在[sourceforge](https://sourceforge.net/projects/synergy-stable-builds/files/v1.8.8-stable/) 上下载对应的Win下面的安装包，同样针对桌面Linux也下载对应的deb安装包。三个均安装好，设置一台机器为服务器，也即共享键鼠的机器，记住该机器ip。之后进入其他的机器，设置为客户端，填写服务器的ip，记住该机器的屏幕名，然后再进入有键鼠的那台机器，点击`设置服务器`,添加各个客户端的屏幕，且命名为各机器的屏幕名，并拖动摆放好各个屏幕的相对关系，这样就完成了设置。除了能共享键鼠外，剪贴板里面的文字内容也可以共享的。而文件拖拽复制功能Linux下不支持还是有点遗憾。
+
+
+
+
+
+
+
