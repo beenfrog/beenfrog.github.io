@@ -90,7 +90,7 @@ C:\Users\Administrator\Anaconda3\Scripts
 C:\Users\Administrator\Anaconda3\Library\bin
 ```
 
-## synergy
+## Synergy
 用于多台机器之间共享鼠标、键盘、剪贴板。只要在一台机器上安装了鼠标键盘，就可以在其他机器上使用，对于桌面有多台机器来说非常的方便。例如一台桌面Linux，一台Windows，一台嵌入式的Nano系统，这样只要一套键鼠就可以操作所有机器了，减少了各种切换以及对桌面的空间需求。
 安装过程，首先对于Nano，使用命令安装如下：
 ```bash
