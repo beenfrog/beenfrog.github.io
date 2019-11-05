@@ -89,7 +89,7 @@ ss-restart
 + 有用的链接：[〇](https://github.com/shadowsocks/shadowsocks/wiki), [安装一](https://thief.one/2017/02/22/Shadowsocks%E6%8A%98%E8%85%BE%E8%AE%B0/), [安装二](https://github.com/sirzdy/shadowsocks), [BBR三](https://www.isthnew.com/archives/centos7-bbr.html), [本地四](https://pangsuan.com/p/ubuntu-shadowsocks-client.html), [DNS五](https://blog.csdn.net/w670328683/article/details/61923858)
 
 ## Proxychains
-在命令行中使用代理，(Proxychains)[https://github.com/rofl0r/proxychains-ng], 安装方式如下
+在命令行中使用代理，[Proxychains](https://github.com/rofl0r/proxychains-ng), 安装方式如下
 ```bash
   ./configure --prefix=/usr --sysconfdir=/etc
   make
