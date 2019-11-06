@@ -79,13 +79,14 @@ export LANG=zh_CN
 ```
 
 ### 错误处理
-若开启后出现`unable to download XXXX. please view the console for more details`,这里`XXXX`是已安装的包，这时到`setting-user`中将`ignored_packages`中被禁的包移除，同时添加如下的内容。主要的原因是连接网络的小工具有问题。
+若开启后出现`unable to download XXXX. please view the console for more details`,这里`XXXX`是已安装的包，这时到`Preferences\setting-user`中将`ignored_packages`中被禁的包移除，同时到`Preferences\Package Settings\Package Control\Settings-User`添加如下的内容。主要的原因是连接网络的小工具有问题。
 ```json
+"debug": true,
 "downloader_precedence":
 {
-	"linux": [ "curl", "urllib", "wget" ],
-	"osx": [ "curl", "urllib" ],
-	"windows": [ "wininet" ]
+	"linux": ["curl","urllib","wget"],
+	"osx": ["curl","urllib"],
+	"windows": ["wininet"]
 },
 ```
 
