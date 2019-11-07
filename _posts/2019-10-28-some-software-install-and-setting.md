@@ -29,6 +29,16 @@ export LANG=zh_CN
 ```
 + 重启电脑后，会提示时候改回成中文，选择不改即可
 
+### 可视化硬件信息
+```bash
+sudo apt-get install hardinfo
+```
+
+### LXDE的双屏幕设置
+```bash
+sudo apt-get install arandr
+```
+
 ## Firefox
 常用插件如：
 + Adblock Plus
