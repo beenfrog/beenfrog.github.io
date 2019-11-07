@@ -123,8 +123,8 @@ sudo apt-get install synergy
 ## Win 10双网卡设置
 将两个网线接好后，可在`控制面板\所有控制面板项\网络连接`里面将一个网卡只启用ipv4另一个只启用ipv6,这样就可以各取所需了。
 
-
-
+## Rufus 制作U盘启动镜像
+[Rufus](https://rufus.ie/)简洁好用。
 
 
 
