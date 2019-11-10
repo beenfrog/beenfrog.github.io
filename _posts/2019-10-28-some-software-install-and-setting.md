@@ -90,6 +90,13 @@ sudo apt-get install arandr
     "env": {"PYTHONIOENCODING": "utf8"}
 }
 ```
+Anaconda自身的设置如下：
+```json
+{
+	"python_interpreter": "C:\\Users\\Administrator\\Anaconda3\\python.exe",
+	"anaconda_linting": false
+}
+```
 
 ### 错误处理
 若开启后出现`unable to download XXXX. please view the console for more details`,这里`XXXX`是已安装的包，这时到`Preferences\setting-user`中将`ignored_packages`中被禁的包移除，同时到`Preferences\Package Settings\Package Control\Settings-User`添加如下的内容。主要的原因是连接网络的小工具有问题。
