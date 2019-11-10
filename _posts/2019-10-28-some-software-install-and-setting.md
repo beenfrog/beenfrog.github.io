@@ -56,6 +56,9 @@ sudo apt-get install arandr
 ]
 ```
 
+### PackageResourceViewer
+可以用来更改默认的的包内设置，尤其是修改默认的build系统
+
 ### Terminus
 可在Sublime中打开终端，使用方式`crtl+shift+p`中搜索`Terminus: `根据提示选择. 设置默认终端可参考：
 ```json
