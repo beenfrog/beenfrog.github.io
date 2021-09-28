@@ -28,13 +28,13 @@ date: 2021-09-29 02:52:13 +0800
 + 安装用于发送邮件的`mailjet`服务接口： `pip install mailjet-rest`
 
 ## rss转换
-首先定义一个需要订阅的 `rss` 列表文件：`**feed.csv**`，标题与地址用逗号隔开，类似如下
-```csv
+首先定义一个需要订阅的 `rss` 列表文件：**feed.csv**，标题与地址用逗号隔开，类似如下
+```bash
 Solidot,https://www.solidot.org/index.rss
 Slashdot,http://rss.slashdot.org/Slashdot/slashdotMain?format=usm
 ```
 
-然后编写 `rss` 转换的设置文件，虽然后缀是 `recipe`，其实是正宗的 `python` 程序，这里示例文件: `**rss.recipe**` 如下
+然后编写 `rss` 转换的设置文件，虽然后缀是 `recipe`，其实是正宗的 `python` 程序，这里示例文件: **rss.recipe** 如下
 ```python
 #!/usr/bin/env python3
 import csv
@@ -63,8 +63,7 @@ class Rss2KindleRecipe(BasicNewsRecipe):
 
 `recipe` 的更多参数设置见 [API documentation for recipes](https://manual.calibre-ebook.com/news_recipe.html)
 
-## mobi发送
-定义好 `recipe` 就可以将 `rss` 转为 `mobi` 了，定义转换脚本: `**run_convert**`
+定义好 `recipe` 就可以将 `rss` 转为 `mobi` 了，定义转换脚本: **run_convert**
 ```bash
 #!/usr/bin/env bash
 
@@ -74,7 +73,8 @@ ebook-convert /var/www/kindlefeed/rss.recipe /var/www/kindlefeed/kindlefeed.mobi
               --title "RSS News"
 ```
 
-转换好后就可以通过邮箱发送了，`calibre` 自带 `calibre-smtp` 的命令，需要自己提供发送邮箱的信息，使用起来也不复杂。但是自己以前用过 `mailjet` ，专业的邮件发送服务，更灵活。发送的代码: `**kindlefeed.py**`
+## mobi发送
+转换好后就可以通过邮箱发送了，`calibre` 自带 `calibre-smtp` 的命令，需要自己提供发送邮箱的信息，使用起来也不复杂。但是自己以前用过 `mailjet` ，专业的邮件发送服务，更灵活。发送的代码: **kindlefeed.py**
 ```python
 import os
 import base64
@@ -135,4 +135,4 @@ print(result.json())
 0 18 * * * root /opt/anaconda3/bin/python /var/www/kindlefeed/kindlefeed.py >>/var/log/kindlefeed.log 2>&1 &
 ```
 
-显然，自己实际运行时要修改上面代码中的文件路径，以及 `mailjet` 的 `key` 和邮箱地址。
+当然，自己实际运行时要修改上面代码中的文件路径，以及 `mailjet` 的 `key` 和邮箱地址。
