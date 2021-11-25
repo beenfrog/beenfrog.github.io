@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 关于PT站魔力值
+tags:
 - math
 - network
 categories:
